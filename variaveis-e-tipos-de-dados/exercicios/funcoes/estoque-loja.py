@@ -16,11 +16,15 @@ def controle_estoque():
 
         qtd = int(input("Entre com a quantidade em estoque: "))
 
+        geral += qtd
+
+
         if qtd < 5 :
             print("Produto" ,nome, "com estoque baixo")
         else :
             print("Estoque de ", nome, "está ok")
-    geral = qtd + i #terminar
+
+    print("O total: {}".format(geral))
 
 controle_estoque()
         
